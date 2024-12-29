@@ -1,5 +1,3 @@
-'use client';
-
 import { useEffect, useState } from 'react';
 import { db } from '@/firebase/firebaseClient';
 import { collection, getDocs, orderBy, query } from 'firebase/firestore';
@@ -36,10 +34,10 @@ const Home: React.FC = () => {
       <Link
         href="/write"
         className="mb-4 inline-block px-4 py-2 bg-green-500 text-white rounded">
-        
-          덕담 작성하기
-        
-      </Link>
+      
+        덕담 작성하기
+      
+    </Link>
       <ul>
         {dukdams.map(dukdam => (
           <li key={dukdam.id} className="mb-2 p-2 border rounded">
